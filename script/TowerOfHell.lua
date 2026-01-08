@@ -25,9 +25,9 @@ local Tabs = {
 Window:SelectTab(1)
 
 Tabs.ScriptLib:AddButton({
-    Title = "Luminary Hub",
+    Title = "God mode",
     Description = "",
     Callback = function()
-    loadstring(game:HttpGet('https://pastebin.com/raw/mizeQM4i'))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/zephyr10101/ignore-touchinterests/main/main",true))()
     end
 })
