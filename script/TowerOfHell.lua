@@ -28,6 +28,23 @@ Tabs.ScriptLib:AddButton({
     Title = "God mode",
     Description = "",
     Callback = function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/zephyr10101/ignore-touchinterests/main/main",true))()
+    --[[
+	WARNING: Heads up! This script has not been verified by ScriptBlox. Use at your own risk!
+]]
+local LocalPlayer = game:GetService("Players").LocalPlayer
+
+local function Invincibility()
+    if LocalPlayer.Character then
+        for i, v in pairs(LocalPlayer.Character:GetChildren()) do
+            if v.Name == "hitbox" then
+                v:Destroy()
+            end
+        end
+    end
+end
+
+while wait(0.5) do
+    Invincibility(LocalPlayer)
+end
     end
 })
